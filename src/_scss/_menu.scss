@@ -1,0 +1,48 @@
+.main-header{
+    width: 200px;
+    height: 100%;
+    background: $primary-color;
+    text-align: center;
+    border-right: 1px solid $menu-border;
+    position: fixed;
+    
+    a{
+        color: #999;
+        text-decoration: none;
+    }
+    .menu-item{
+        &.current > a {
+            color: $secondary-color;
+          }
+        text-transform: uppercase;
+        font-family: 'Roboto';
+        border-bottom:1px solid $menu-border;
+        padding: 15px 0;
+       
+    }
+
+    .nav-footer{
+        width: 100%;
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+        .social{
+            li{
+            display: inline-block;
+            font-size: 18px;
+            margin-right: 10px;
+                a{
+                    padding: 0.4rem;
+                
+                    &:hover{
+                    color: $secondary-color;
+                    @include easeOut();
+                    }
+                }
+            }
+        
+        }
+    }
+}

@@ -1,0 +1,9 @@
+$primary-color:#2a2b30;
+$menu-border: #202125;
+$secondary-color:#f8f9fa;
+$home-image:url('../img/background.jpg');
+
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
