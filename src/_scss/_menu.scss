@@ -5,7 +5,7 @@
     text-align: center;
     border-right: 1px solid $menu-border;
     position: fixed;
-    
+    z-index: 99;
     a{
         color: #999;
         text-decoration: none;

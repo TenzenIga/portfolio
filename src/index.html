@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -12,10 +13,10 @@
     <header class="main-header">
             <nav class="nav_menu">
                     <ul>
-                        <li class="menu-item current" data-name="home"><a href="/#main" class='nav-link' >Главная</a></li>
-                        <li class="menu-item" data-name="about"><a href="/#about" class='nav-link' >Обо мне</a></li>
-                        <li class="menu-item" data-name="works"><a href="/#works" class='nav-link' >Проекты</a></li>
-                        <li class="menu-item" data-name="contact"><a href="/#contact" class='nav-link' >Контакты</a></li>
+                        <li class="menu-item current" data-name="home"><a href="#" class='nav-link' >Главная</a></li>
+                        <li class="menu-item" data-name="about"><a href="#" class='nav-link' >Обо мне</a></li>
+                        <li class="menu-item" data-name="works"><a href="#" class='nav-link' >Проекты</a></li>
+                        <li class="menu-item" data-name="contact"><a href="#" class='nav-link' >Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="nav-footer">
@@ -26,11 +27,117 @@
                     </ul>
                 </div>
     </header>
-   <main >
-    <section id="home" class="page page-active"><h1>Гаджизаде Орхан</h1></section>
-       <section id="about" class="page"><h1>Обо мне</h1></section>
-       <section id="works" class="page"> <h1>Проекты</h1></section>
-       <section id="contact" class="page"><h1>Контакты</h1></section>
+   <main class="pages">
+       <!--- Home -->
+    <div id="home" class="page home ">
+        <div class="page-container">
+                <h1>Гаджизаде <span class="text-secondary">Орхан</span></h1>
+        </div>
+        
+    </div>
+    <!--- About -->
+    <div id="about" class="page about">
+        <div class="page-container">
+            
+                <div class="page-heading">
+                        <h2 class="heading">Обо мне</h2>
+                  </div>           
+                   <div class="about-info">
+                        <h3 class="sm-heading">Web-разработчик</h3>
+                        <p>Web-разработчик. Работаю с JavaScript.<br> В основном делаю проекты для себя, чтобы набить руку с новыми технологиями. Изучаю фреймворки, как backend, так и frontend. Люблю React. Для backend использую NodeJs(Express) или PHP. Есть опыт с MySql и MongoDB.
+                            Пока что делаю упор на Frontend разработку, есть желание стать fullstack web разработчиком.</p>
+                   </div>
+                   <div class="personal-info">
+                       <h3 class="sm-heading">Персональные данные</h3>
+                       <ul>
+                           <li><span class="text-title">Имя:</span> Гаджизаде Орхан</li>
+                           <li><span class="text-title">Возраст:</span> 26</li>
+                           <li><span class="text-title">Место проживания:</span> Санкт-Петербург, Россия </li>
+                           <li><span class="text-title">Email:</span> arhan-93@list.ru</li>
+                           <li><span class="text-title">Телефон:</span> 8 961 608 7596</li>
+                       </ul>
+                   </div>
+                   <div class="job job-2">
+                        <h3 class="sm-heading">Знаю</h3>
+                        <div class="icons">
+                          <i class="devicon-html5-plain-wordmark colored"></i>
+                                 <i class="devicon-css3-plain-wordmark colored"></i>
+                             <i class="devicon-sass-original"></i>
+                            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                                <i class="devicon-jquery-plain-woцrdmark colored"></i>
+              
+                             <i class="devicon-javascript-plain colored"></i>
+              
+              
+              
+                        <i   class="devicon-nodejs-plain-wordmark colored"></i>
+                      <i class="devicon-react-original-wordmark colored"></i>
+                        </div>
+            </div>
+            <div class="job">
+                  <h3 class="sm-heading">Знаком</h3>
+                  <div class="icons">
+                 <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-php-plain"></i>
+                <i class="devicon-angularjs-plain colored"></i>
+                    <i class="devicon-mongodb-plain-wordmark colored"></i>
+                <i class="devicon-mysql-plain-wordmark"></i>
+                </div>
+              </div>
+        </div>
+         
+        </div>
+
+       
+
+
+  
+
+        <!--- Works -->
+       <div id="works" class="page works">
+           <div class="page-container">
+                <div class="page-heading">
+                        <h2 class="heading">Проекты</h2>
+                  </div>  
+            </div>
+           </div> 
+       <!--- Contact -->
+       <div id="contact" class="page contact page_active">
+            <div class="page-container">
+                    <div class="page-heading">
+                             <h2 class="heading">Контакты</h2>
+                      </div>
+                        <div class="contact-form-wrapper">
+                            <div class="sub-heading">
+                                    <h3>Напишите мне</h3>
+                            </div>
+                            
+                            <form action="" class="contact-form">
+                                        <div class="contact-form__input name">
+                                                <input type="text">
+                                                <label for="name">Имя</label>
+                                        </div>
+                                        <div class="contact-form__input email">
+                                                <input type="email">
+                                                <label for="email">Email</label>
+                                        </div>
+                                        <div class="contact-form__input textarea">
+                                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                <label for="text">Сообщение</label>
+                                        </div>
+                                        <button type="submit contact-form__submit">Отправить</button>
+                                
+                            </form>
+                        </div>
+                        <div class="contact-info">
+                            <div class="info-item">github</div>
+                            <div class="info-item">Twitter</div>
+                            <div class="info-item">
+                               vk
+                            </div>
+                        </div>
+            </div>   
+        </div>
    </main> 
  
 </body>

@@ -1,14 +1,15 @@
 @import 'config';
 @import 'menu';
+@import 'animations';
 
 html {
   box-sizing: border-box;
 }
 html, body{
-  position: relative;
+  background: $primary-color;
     height: 100%;
     width: 100%;
-    
+   
 }
 *{
   margin: 0;
@@ -22,43 +23,135 @@ html, body{
 }
 
 //Main page
-main{
+.pages{
+    
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 200px;
-    right: 0px;
+    right: 0;
     width: auto;
     height: 100%;
-    perspective: 1200px;
-    overflow: hidden;
+    z-index: 1;
     
 
-  .page{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-  & .page-active{
-    transition: all 0.9s ease;
-   
-  }
-  
-  #home{
-    background: $home-image;
-  }
-  #about{
-    
-    background: green;
-  }
-  #works{
-    
-    background: blue;
-  }
-  #contact{
-  
-    background: red;
-  }
+.page{
+  background: $section-background;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility:hidden;
   
 }
+ & .page_active{
+  visibility:visible;
+}
+} 
+main{
+  font-family: Playfair+Display;
+   .heading{
+     color: #00A3E1;
+     font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1em;
+    text-transform: capitalize;
+   }
+ .text-secondary{
+   color: #00A3E1;
+ }
+ .page-container{
+     width: 90%;
+    margin: 0 auto;
+    .page-heading{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+  }
+ }
+ p{
+   font-family: roboto;
+ }
+}
+
+.sub-heading{
+  
+  text-align: center;
+   h3{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: .5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid #00A3E1;
+    &::before{
+      left: 0;
+      position: absolute;
+      content:"";
+      width: 2px;
+      height: 5px;
+      background-color: #00A3E1;
+      bottom: 0;
+    }
+    &::after{
+      right: 0;
+      position: absolute;
+      content:"";
+      width: 2px;
+      height: 5px;
+      background-color: #00A3E1;
+      bottom: 0;
+    }
+   }
+   
+}
+
+  #home{
+    background: $home-image;
+    
+  }
+  // About Page
+  .about{
+    
+    
+  }
+
+  //Works
+  .works{
+    
+  }
+  //Cantact
+  
+  .contact-form{
+    &__input{
+      position: relative;
+    }
+    position: relative;
+    &__input input, textarea{
+      border: 2px solid #999;
+      position: relative; 
+    }
+
+    textarea{
+      resize: none;
+      
+    }
+    &__input label{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+  } 
+ 
+    
+ 
+  
+
+
+
