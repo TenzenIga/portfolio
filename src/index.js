@@ -1,11 +1,14 @@
 import style from "./_scss/main.scss";
+import {htmlCircle, cssCircle, jsCircle} from './js/bars';
+import initMap from './js/google_map';
+window.initMap = initMap;
+
 
 const menuItems = document.querySelectorAll('.menu-item');
-
 const pages = document.querySelectorAll('.page')
 
 const outClass = 'pt-page-moveToBottom';
-const	inClass = 'pt-page-scaleUp';
+const inClass = 'pt-page-scaleUp';
 let animationComplete = true;
 menuItems.forEach(item => item.addEventListener('click', changePage))
 
@@ -41,4 +44,6 @@ function removeAnimation(e){
     
 }
 
+const projectMenu = document.querySelectorAll('.menu li');
+console.log(projectMenu)
 

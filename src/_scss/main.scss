@@ -1,15 +1,18 @@
 @import 'config';
 @import 'menu';
 @import 'animations';
+@import 'button';
+@import 'map';
+@import 'bars';
 
 html {
   box-sizing: border-box;
 }
 html, body{
-  background: $primary-color;
+  background: #fff;
     height: 100%;
     width: 100%;
-   
+   min-height: 100%;
 }
 *{
   margin: 0;
@@ -22,62 +25,68 @@ html, body{
   box-sizing: inherit;
 }
 
+h1,h2,h3,h4,h5{
+  font-family: "Playfair Display", serif;
+}
+
+p{
+  font-family: roboto;
+}
+#bar{
+  width: 300px;
+}
 //Main page
 .pages{
-    
+    background: $primary-color;
     position: absolute;
     top: 0;
     left: 200px;
     right: 0;
     width: auto;
-    height: 100%;
+    height:100%;    
     z-index: 1;
-    
+        .page{
+        background: $section-background;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+        & .page_active{
+          display: block;
+        }
 
-.page{
-  background: $section-background;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility:hidden;
-  
+.heading{
+  color: #00A3E1;
+  font-size: 36px;
+ font-weight: 700;
+ letter-spacing: 1.5px;
+ line-height: 1em;
+ text-transform: capitalize;
 }
- & .page_active{
-  visibility:visible;
+
+.text-secondary{
+color: #00A3E1;
 }
-} 
-main{
-  font-family: Playfair+Display;
-   .heading{
-     color: #00A3E1;
-     font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    line-height: 1em;
-    text-transform: capitalize;
-   }
- .text-secondary{
-   color: #00A3E1;
- }
- .page-container{
-     width: 90%;
-    margin: 0 auto;
+
+.page-container{
+  width: 90%;
+  margin: 0 auto;
+  background: #fff;
     .page-heading{
-    margin-bottom: 50px;
-    margin-top: 50px;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
-  }
- }
- p{
-   font-family: roboto;
- }
+      margin-bottom: 50px;
+      margin-top: 50px;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+      padding-bottom: 10px;
+    }
 }
+
+} 
 
 .sub-heading{
-  
+  margin-bottom: 50px;
   text-align: center;
    h3{
     display: inline-block;
@@ -111,43 +120,182 @@ main{
    
 }
 
+.sm-heading{
+  font-family: "Playfair Display";
+  margin-bottom: 20px;
+  text-align: center;
+}
+
   #home{
     background: $home-image;
-    
+    overflow: hidden;
   }
   // About Page
+  .home{
+    height: 100%;
+  }
   .about{
+    .about-info{
+      margin-bottom: 70px;
+      display: flex;
+      flex-wrap: wrap;
+      &__intro{
+        flex-basis: 66.6%;
+        padding: 0 15px;
+      }
+      &__personal{
+        padding: 0 15px;
+        flex-basis: 33.3%;
+        li{
+          font-family: roboto;
+          line-height: 1.5em;
+          margin-bottom: 13px;
+         
+        .text-title{
+          font-family: "Playfair Display";
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: .5px;
+          margin-right: 15px;
+          border-bottom: 2px solid #00A3E1;
+          position: relative;
+          
+          &::after{
+            content: ':';
+            position: absolute;
+            right: -10px;
+          }
+        }
+        .value{
+          display: inline-block;
+        }
+        .number{
+          color: #000;
+          text-decoration: none;
+        }
+      }
+      }
+    }
     
-    
+    .skills-icons__wrapper{
+      
+      display: flex;
+      margin-bottom: 30px;
+      .icons{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        flex-basis: 100%;
+        h3{
+          flex-basis: 100%;
+        }
+         i{
+          font-size: 6em;
+          padding: 10px;
+         }
+      }
+      
+    }
   }
 
   //Works
   .works{
-    
+    .menu{
+      text-align: center;
+      ul{
+        display: inline-block;
+        border: 1px dashed rgba(0, 0, 0, 0.2);
+        border-radius: 27px;
+      li{
+        display: inline-block;
+        font-family: roboto;
+        padding: 14px;
+      }
+      & .active{
+        background: #00A3E1;
+        border-radius: 27px;
+      }  
+
+    }
   }
-  //Cantact
+  }
+  //Contact
   
-  .contact-form{
+  .contact-form{ 
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    max-width: 680px;
+    & > *{
+      margin-top: 50px;
+      width: 100%;
+    }
+     .row{
+       display: flex;
+       justify-content: space-between;
+       &> div{
+         flex-basis: 45%;
+       }
+     }
     &__input{
       position: relative;
+      
+      input, textarea{
+        border: 2px solid #999;
+        position: relative;
+        width: 100%;
+        padding: 10px 10px;
+        background: transparent;
+        z-index: 1;
+        
+        &:focus ~ label,
+        &:not(:focus):valid ~ label{
+         left: 0;
+         top:-20px;
+        }
     }
-    position: relative;
-    &__input input, textarea{
-      border: 2px solid #999;
-      position: relative; 
-    }
-
+  }
+    
     textarea{
       resize: none;
-      
+      width: 100%;
+      margin: 0 auto;
     }
     &__input label{
+      font-weight: 500;
+      font-size: 16px;
+      font-family: Roboto;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 10px;
+      left: 10px;
+      color: #555;
+      transition: all .2s ease;
+      z-index: 0;
     }
-    
-  } 
+    &__submit{
+      text-align: center;
+    }    
+  }
+ 
+  .contact-info{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    &__element{
+      font-size: 18px;
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      i{
+        font-size: 1.5em;
+        color: #00A3E1;
+    }
+  }
+}
+
+  
  
     
  

@@ -29,7 +29,7 @@
     </header>
    <main class="pages">
        <!--- Home -->
-    <div id="home" class="page home ">
+    <div id="home" class="page home">
         <div class="page-container">
                 <h1>Гаджизаде <span class="text-secondary">Орхан</span></h1>
         </div>
@@ -43,47 +43,59 @@
                         <h2 class="heading">Обо мне</h2>
                   </div>           
                    <div class="about-info">
-                        <h3 class="sm-heading">Web-разработчик</h3>
-                        <p>Web-разработчик. Работаю с JavaScript.<br> В основном делаю проекты для себя, чтобы набить руку с новыми технологиями. Изучаю фреймворки, как backend, так и frontend. Люблю React. Для backend использую NodeJs(Express) или PHP. Есть опыт с MySql и MongoDB.
-                            Пока что делаю упор на Frontend разработку, есть желание стать fullstack web разработчиком.</p>
+                    <div class="about-info__intro">   
+                    <h3 class="sm-heading">Web-разработчик</h3>
+                        <p>Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est vel. Dolorem praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerum
+ Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid excepturi laudantium? Illo architecto aliquam velit illo magnam neque perferendis sint Incidunt eius ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus ex Quidem officia deleniti accusamus obcaecati dolores. Porro culpa quibusdam impedit porro praesentium excepturi. Alias ab consequatur?</p>
                    </div>
-                   <div class="personal-info">
+                   <div class="about-info__personal">
                        <h3 class="sm-heading">Персональные данные</h3>
                        <ul>
-                           <li><span class="text-title">Имя:</span> Гаджизаде Орхан</li>
-                           <li><span class="text-title">Возраст:</span> 26</li>
-                           <li><span class="text-title">Место проживания:</span> Санкт-Петербург, Россия </li>
-                           <li><span class="text-title">Email:</span> arhan-93@list.ru</li>
-                           <li><span class="text-title">Телефон:</span> 8 961 608 7596</li>
+                           <li><span class="text-title">Имя</span><span class="value">Гаджизаде Орхан</span></li>
+                           <li><span class="text-title">Возраст</span><span class="value">26</span></li>
+                           <li><span class="text-title">Место проживания</span><span class="value">Санкт-Петербург, Россия</span></li>
+                           <li><span class="text-title">Email</span><span class="value">arhan-93@list.ru</span></li>
+                           <li><span class="text-title">Телефон</span><a class="value number" href="tel:+79616087596">8 961 608 7596</a></li>
                        </ul>
                    </div>
-                   <div class="job job-2">
-                        <h3 class="sm-heading">Знаю</h3>
-                        <div class="icons">
-                          <i class="devicon-html5-plain-wordmark colored"></i>
-                                 <i class="devicon-css3-plain-wordmark colored"></i>
-                             <i class="devicon-sass-original"></i>
-                            <i class="devicon-bootstrap-plain-wordmark colored"></i>
-                                <i class="devicon-jquery-plain-woцrdmark colored"></i>
-              
-                             <i class="devicon-javascript-plain colored"></i>
-              
-              
-              
-                        <i   class="devicon-nodejs-plain-wordmark colored"></i>
-                      <i class="devicon-react-original-wordmark colored"></i>
-                        </div>
-            </div>
-            <div class="job">
-                  <h3 class="sm-heading">Знаком</h3>
-                  <div class="icons">
-                 <i class="devicon-typescript-plain colored"></i>
-                <i class="devicon-php-plain"></i>
-                <i class="devicon-angularjs-plain colored"></i>
-                    <i class="devicon-mongodb-plain-wordmark colored"></i>
-                <i class="devicon-mysql-plain-wordmark"></i>
                 </div>
-              </div>
+                   <div class="skills-bar__wrapper">
+                        <div class="sub-heading">
+                                <h3>Навыки</h3>
+                        </div>
+                        <div class="skills-bar__row">
+                                <div id='html' class="skills-bar__item"></div>
+                                <div id="css" class="skills-bar__item"></div>
+                                <div id="js" class="skills-bar__item"></div>
+                        </div>
+                      
+            </div>
+            <div class="skills-icons__wrapper">
+                    <div class="frontend__skills icons">
+                    <h3 class="sm-heading">Frontend</h3>
+                    
+                            <i class="devicon-html5-plain-wordmark colored"></i>
+                            <i class="devicon-css3-plain-wordmark colored"></i>
+                        <i class="devicon-sass-original"></i>
+                       <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                           <i class="devicon-jquery-plain-wordmark colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                 <i class="devicon-react-original-wordmark colored"></i>
+                 <i class="devicon-angularjs-plain colored"></i>
+                    
+                 </div>
+                 <div class="backend__skills icons">
+                        <h3 class="sm-heading">Backend</h3>
+                        <i class="devicon-nodejs-plain-wordmark colored"></i>
+                       <i class="devicon-typescript-plain colored"></i>
+                       <i class="devicon-php-plain"></i>
+                        <i class="devicon-mongodb-plain-wordmark colored"></i>
+                       <i class="devicon-mysql-plain-wordmark"></i>
+                        
+                 </div>
+            </div>
+                  
+            
         </div>
          
         </div>
@@ -94,15 +106,23 @@
   
 
         <!--- Works -->
-       <div id="works" class="page works">
+       <div id="works" class="page works page_active">
            <div class="page-container">
                 <div class="page-heading">
                         <h2 class="heading">Проекты</h2>
+                  </div>
+                  <div class="menu">
+                      <ul>
+                          <li class="active">Все</li>
+                          <li>Vanilla JS</li>
+                          <li>React</li>
+                          <li>Angular</li>
+                      </ul>
                   </div>  
             </div>
            </div> 
        <!--- Contact -->
-       <div id="contact" class="page contact page_active">
+       <div id="contact" class="page contact">
             <div class="page-container">
                     <div class="page-heading">
                              <h2 class="heading">Контакты</h2>
@@ -113,30 +133,55 @@
                             </div>
                             
                             <form action="" class="contact-form">
+                                <div class="row">
                                         <div class="contact-form__input name">
-                                                <input type="text">
+                                                <input type="text" class="name_input" required>
                                                 <label for="name">Имя</label>
                                         </div>
-                                        <div class="contact-form__input email">
-                                                <input type="email">
+                                        <div class="contact-form__input email" >
+                                                <input type="text" class="email_input" required>
                                                 <label for="email">Email</label>
                                         </div>
+                                    </div>        
                                         <div class="contact-form__input textarea">
-                                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                <textarea name="" id="" cols="30" rows="10" required></textarea>
                                                 <label for="text">Сообщение</label>
                                         </div>
-                                        <button type="submit contact-form__submit">Отправить</button>
+                                    <div class="contact-form__submit">
+                                        <button class="btn">Отправить</button>
+                                    </div>
+                                       
+                                
+                                       
                                 
                             </form>
                         </div>
                         <div class="contact-info">
-                            <div class="info-item">github</div>
-                            <div class="info-item">Twitter</div>
-                            <div class="info-item">
-                               vk
+                            <div class="contact-info__element">
+                                <i class="far fa-envelope"></i>
+                                <h5>arhan-9@list.ru</h5>
                             </div>
+                            <div class="contact-info__element">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <h5>Проспект Большевиков, Санкт-Петербург</h5>
+                            </div>
+                        
+                            <div class="contact-info__element">
+                                <i class="fas fa-phone"></i>
+                                <h5>8 961 608 7596</h5>
+                            </div>
+                              
+
                         </div>
-            </div>   
+                       
+            </div>
+            <div id="map"></div> 
+                    
+                       
+                        <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2qC9x26Kkubd9pPmpjnW6mryi1m8ybQc&callback=initMap">
+                        </script>
+            
         </div>
    </main> 
  
