@@ -1,5 +1,6 @@
 import style from "./_scss/main.scss";
 import {htmlCircle, cssCircle, jsCircle} from './js/bars';
+import {projectMenu, projects} from './js/projects';
 import initMap from './js/google_map';
 window.initMap = initMap;
 
@@ -15,25 +16,23 @@ menuItems.forEach(item => item.addEventListener('click', changePage))
 pages.forEach(page=> page.addEventListener('animationend', removeAnimation));
 
 function changePage(){
-if(!animationComplete) return;
-animationComplete= false;
-const newPage= document.querySelector(`.${this.dataset.name}`)
-const prevPage = document.querySelector('.page_active');
-const current=document.getElementsByClassName('current')
-addAnimation(prevPage, newPage)
-current[0].classList.remove('current')
-this.classList.add('current')  
-
+    if(!animationComplete) return;
+    animationComplete= false;
+    const newPage= document.querySelector(`.${this.dataset.name}`)
+    const prevPage = document.querySelector('.page_active');
+    const current=document.getElementsByClassName('current')
+    addAnimation(prevPage, newPage)
+    current[0].classList.remove('current')
+    this.classList.add('current')  
 }
 
 function addAnimation(prevPage, newPage){
-  if(newPage.classList.contains('page_active')) return false;
-  prevPage.classList.add(outClass);
-  newPage.classList.toggle(inClass)
-  newPage.classList.add('page_active')   
+    if(newPage.classList.contains('page_active')) return false;
+    prevPage.classList.add(outClass);
+    newPage.classList.toggle(inClass)
+    newPage.classList.add('page_active')   
 }
 function removeAnimation(e){
-    
     if(e.animationName =='moveToBottom'){
         this.classList.remove('page_active');
         this.classList.remove(outClass);
@@ -44,6 +43,9 @@ function removeAnimation(e){
     
 }
 
-const projectMenu = document.querySelectorAll('.menu li');
-console.log(projectMenu)
+
+
+
+
+
 
