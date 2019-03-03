@@ -35,7 +35,9 @@ p{
 #bar{
   width: 300px;
 }
-//Main page
+
+
+
 .pages{
     background: $primary-color;
     position: absolute;
@@ -61,6 +63,7 @@ p{
         }
 
 .heading{
+  
   color: #00A3E1;
   font-size: 36px;
  font-weight: 700;
@@ -130,13 +133,54 @@ color: #00A3E1;
 }
 
   #home{
-    background: $home-image;
+    position: relative; 
     overflow: hidden;
-  }
-  // About Page
-  .home{
     height: 100%;
+      .page-container{
+        display: flex;
+        position: relative;
+        z-index: 200;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        height: 100%;
+        h1{    
+          color:#fff;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: 900;
+          font-size:3em;
+        }
+        .typed-text{
+          top: 60%;
+          font-size: 2em;
+          color:#fff;
+          font-family: "Playfair Display";
+          font-weight: 900;
+          padding: 5px;
+          
+          position: absolute;
+        }
+      }
+     &::before{
+      background: $home-image;
+      content: "";
+      position: absolute;
+      top: 0; 
+      left: 0;
+      width: 100%; 
+      height: 100%;  
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      filter: grayscale(100%);
+     } 
   }
+
+  
+
+  // About Page
+ 
   .about{
     .about-info{
       margin-bottom: 70px;
@@ -340,6 +384,8 @@ color: #00A3E1;
     justify-content: space-around;
     &__element{
       font-size: 18px;
+      font-weight: 500;
+      line-height: 1.2;
       text-align: center;
       font-family: "Playfair Display", serif;
       i{

@@ -42,6 +42,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "progressbar.js": "^1.0.1"
+    "progressbar.js": "^1.0.1",
+    "typed.js": "^2.0.10"
   }
 }

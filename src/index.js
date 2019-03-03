@@ -1,6 +1,17 @@
 import style from "./_scss/main.scss";
 import {htmlCircle, cssCircle, jsCircle} from './js/bars';
 import {projectMenu, projects} from './js/projects';
+import Typed from 'typed.js';
+
+var options = {
+  strings: ["Frontend", "Backend", "Web разработчик"],
+  typeSpeed: 100,
+  smartBackspace: true,
+  loop:true
+}
+
+var typed = new Typed(".typed-text", options);
+
 import initMap from './js/google_map';
 window.initMap = initMap;
 

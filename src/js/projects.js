@@ -5,15 +5,12 @@ projectsMenu.forEach(item => item.addEventListener('click',selectProjects))
 projects.forEach(project => project.addEventListener('animationend', function(e){
    
    e.target.classList.remove('visible');
-     
-   console.log(e);
    
 }
 ))
 
  function selectProjects(){
     let animationEnd = false;
-  
     const old = document.getElementsByClassName('active'); 
     old[0].classList.remove('active')
     this.classList.add('active')
