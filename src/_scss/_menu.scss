@@ -6,19 +6,23 @@
     border-right: 1px solid $menu-border;
     position: fixed;
     z-index: 99;
+    
+    @include easeOut();
     a{
         color: #999;
         text-decoration: none;
+       
     }
     .menu-item{
-        &.current > a {
-            color: $secondary-color;
-          }
         text-transform: uppercase;
         font-family: 'Roboto';
         border-bottom:1px solid $menu-border;
         padding: 15px 0;
-       
+       a{
+        &.active{
+            color:$secondary-color;
+        }
+       }
     }
 
     .nav-footer{
@@ -45,4 +49,24 @@
         
         }
     }
+    &.show{
+        left:0;
+    }
 }
+
+.mobile-navbar{
+    background:$primary-color;
+    position: fixed;
+    display: none;
+    width: 100%;
+    z-index: 2;
+    height: 50px;
+    color: #fff;
+    i{
+      font-size: 20px;
+      padding: 0;
+      padding: 15px 20px;
+      float: right;
+      cursor: pointer;
+    }
+  }

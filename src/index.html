@@ -13,31 +13,36 @@
     <header class="main-header">
             <nav class="nav_menu">
                     <ul>
-                        <li class="menu-item current" data-name="home"><a href="#" class='nav-link' >Главная</a></li>
-                        <li class="menu-item" data-name="about"><a href="#" class='nav-link' >Обо мне</a></li>
-                        <li class="menu-item" data-name="works"><a href="#" class='nav-link' >Проекты</a></li>
-                        <li class="menu-item" data-name="contact"><a href="#" class='nav-link' >Контакты</a></li>
+                        <li class="menu-item"><a href="#" class='nav-link  active' data-name="home" >Главная</a></li>
+                        <li class="menu-item"><a href="#" class='nav-link' data-name="about" >Обо мне</a></li>
+                        <li class="menu-item"><a href="#" class='nav-link' data-name="works" >Проекты</a></li>
+                        <li class="menu-item"><a href="#" class='nav-link' data-name="contact" >Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="nav-footer">
                     <ul class="social">
-                        <li ><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-github"></i></a></li>
-                        <li><a href=""><i class="fab fa-vk"></i></a></li>       
+                        <li ><a href="https://twitter.com/daga_kotowaru2" target='_blank'><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/TenzenIga" target='_blank'><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://vk.com/zeta93162" target='_blank'><i class="fab fa-vk"></i></a></li>       
                     </ul>
                 </div>
     </header>
+    <nav class="mobile-navbar">
+      <i class="fa fa-bars hamburger" aria-hidden="true"></i> 
+    </nav>
    <main class="pages">
+      
        <!--- Home -->
-    <div id="home" class="page home ">
-        <div class="page-container">
+    <div id="home" class="page home page_active">
+    
+        <div class="page-container ">
                 <h1>Гаджизаде <span class="text-secondary">Орхан</span></h1>
                 <p class="typed-text"></p>
         </div>
        
     </div>
     <!--- About -->
-    <div id="about" class="page about">
+    <div id="about" class="page about ">
         <div class="page-container">
             
                 <div class="page-heading">
@@ -46,8 +51,7 @@
                    <div class="about-info">
                     <div class="about-info__intro">   
                     <h3 class="sm-heading">Web-разработчик</h3>
-                        <p>Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est vel. Dolorem praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerum
- Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid excepturi laudantium? Illo architecto aliquam velit illo magnam neque perferendis sint Incidunt eius ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus ex Quidem officia deleniti accusamus obcaecati dolores. Porro culpa quibusdam impedit porro praesentium excepturi. Alias ab consequatur?</p>
+                        <p>Я Web-разработчик самоучка. Изучаю программирование через онлайн ресурсы, вроде FreeCodeCamp, Udemy, CS50, ну и разумеется, создавая что-то своё. Основной упор я делаю на Frontend и Javascript. Знаком с PHP и SQL на базовом/среднем уровне, но больше предпочитаю Node Js и MongoDB. Стараюсь писать код каждый день, принимаю участие в 100DaysOfCode Challenge в твиттере и стараюсь каждый день совершенствовать свои знания. На этом сайте вы можете увидеть некоторые из моих работ и связаться со мной.</p>
                    </div>
                    <div class="about-info__personal">
                        <h3 class="sm-heading">Персональные данные</h3>
@@ -107,7 +111,7 @@
   
 
         <!--- Works -->
-       <div id="works" class="page works page_active">
+       <div id="works" class="page works ">
            <div class="page-container">
                 <div class="page-heading">
                         <h2 class="heading">Проекты</h2>
@@ -189,7 +193,7 @@
             </div>
            </div> 
        <!--- Contact -->
-       <div id="contact" class="page contact">
+       <div id="contact" class="page contact ">
             <div class="page-container">
                     <div class="page-heading">
                              <h2 class="heading">Контакты</h2>
