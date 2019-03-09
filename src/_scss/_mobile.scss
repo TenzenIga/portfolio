@@ -1,0 +1,64 @@
+
+@include mediaLg{
+    
+}
+
+@include mediaMd{
+    .main-header{
+        left: -200px;
+        &.show{
+            left: 0;
+        }
+    }
+    .pages{
+        left: 0;
+        margin-top: 50px;
+    }
+    .mobile-navbar{
+        display: block;
+    }
+
+
+    .about-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-icons__wrapper{
+        flex-direction: column;
+        
+    }
+
+
+    .works{
+    .projects{
+    .item-wrapper{
+        flex:0 50%;
+            }
+        }
+    }
+}
+
+
+
+
+@include mediaSm{
+    #home::before{
+        background-size: auto;
+    }
+
+    
+    .row{
+        flex-direction: column;
+        & > div{
+            margin: 10px 0;
+        }
+    }
+ 
+    .works{
+        .projects{
+        .item-wrapper{
+            flex:1 100%;
+                }
+            }
+        }
+}

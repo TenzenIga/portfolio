@@ -279,7 +279,6 @@ color: #00A3E1;
         font-family: roboto;
         flex-direction: column;
         text-align: center;
-        
         padding: 10px;
         
         a{
@@ -308,9 +307,15 @@ color: #00A3E1;
           margin: 0;
         }
         &:hover .item-desc{
-          
           visibility: visible;
           opacity: 1;
+        }
+      }
+      .github_link{
+        padding: 0.4rem;
+        &:hover{
+        color: rgba(29, 106, 154, 0.72);
+        transition: color 0.4s ease;
         }
       }
     }
