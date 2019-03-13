@@ -5,6 +5,7 @@ import { ProjectsUI} from './js/projects';
 import Typed from 'typed.js';
 import Menu from './js/navbar';
 import initMap from './js/google_map';
+import Post from './js/ajaxPost';
 
 const options = {
   strings: ["Frontend", "Backend", "Web разработчик"],
@@ -15,15 +16,12 @@ const options = {
 
 
 
-
-
-
-
 function eventListeners(){
     const pageController = new PageController();
     const navMenu = new Menu();
     const projectsIU = new ProjectsUI();
     const typed = new Typed(".typed-text", options);
+    const post = new Post();
     window.initMap = initMap;  
 }
 

@@ -499,14 +499,18 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 450px;
   max-width: 680px; }
-  .contact-form > * {
-    margin-top: 50px;
-    width: 100%; }
+  .contact-form .alert {
+    padding: 10px;
+    color: white; }
+    .contact-form .alert.error {
+      background-color: #f44336;
+      /* Red */ }
+    .contact-form .alert.success {
+      background-color: #4CAF50; }
   .contact-form .row {
     display: -webkit-box;
     display: -ms-flexbox;
