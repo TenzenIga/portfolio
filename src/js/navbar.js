@@ -23,16 +23,5 @@ class Menu{
 }
 
 
-// let showMenu = false;
-// hamburger.addEventListener('click', ()=>{
-//     if(!showMenu){
-//     mainHeader.classList.add('show');
-//     showMenu=true;
-//     }else{
-//         mainHeader.classList.remove('show');
-//     showMenu= false;
-//     }
-// })
-
 
 export default Menu;
