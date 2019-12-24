@@ -439,7 +439,7 @@ p {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+    }
   .works .projects .item-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 33.33%;
